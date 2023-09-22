@@ -17,16 +17,16 @@ public class QuestLine {
         joueur = j;
         quetes = FXCollections.observableArrayList();
         quetes.add(new TalkQuete("Chapitre 0 - Que veut le prof ?", "Que dois je faire ? On va jouer pendant tout le cours ?", 10, "Potion", 1, "spectre"));
-        quetes.add(new TalkQuete("Chapitre 1 - C'est parti pour le TP", "Si vous voulez jouer, il faudra d'abord suivre le TP.\n Si vous arrivez au bout, il faudra être le 1er à push le code pour obtenir le bonus ultime !!!!\n Serez vous de taille ?", 5, "Commit", 1, "vendeur"));
+        quetes.add(new TalkQuete("Chapitre 1 - C'est parti pour le TP", "Si vous voulez jouer, il faudra d'abord ne pas suivre le TP\n et quitter le cours. Il faudra être le 1er à quitter le cours pour obtenir le bonus ultime !!!!\n Serez vous de taille ?", 5, "Commit", 1, "vendeur"));
         quetes.add(new TalkQuete("Chapitre 1 - C'est parti pour le TP", "'Salut à toi héros ici tu trouveras tout ce qu'il te faut, va voir le forgeron pour acheter des armes ou traiter tes minerais'\nAller parler au forgeron au sud de la ville.", 5, "Miel", 1, "upgrader"));
         quetes.add(new LootQuete("Chapitre 1 - C'est parti pour le TP", "'Si tu veux acheter du nouveau matos c'est ici que ça se passe ! Tiens d'ailleurs, rend moi un service tu veux.'\nMiner une source de minerai à l'est.", 10, "Fer", 1, "SourceMinerai", 1));
         quetes.add(new TalkQuete("Chapitre 1 - C'est parti pour le TP", "'Il faudrait peut-etre que je me renseigne à propos de ce livre, une fois que j'aurai amener la marchandise biensur'\nAmener les minerais au forgeron.", 40, "Fer", 3, "upgrader"));
 
-        quetes.add(new TalkQuete("Chapitre 2 - Une recherche sans fin", "Intérroger l'habitant au centre de la ville concernant le livre de Momoku.", 10, "", 0, "villageois4"));
-        quetes.add(new TalkQuete("Chapitre 2 - Une recherche sans fin", "Intérroger l'habitant au sud-ouest de la ville concernant le livre de Momoku", 10, "", 0, "villageois2"));
-        quetes.add(new KillQuete("Chapitre 2 - Une recherche sans fin", "'Je crois bien que je peux t'aider, mais avant j'ai besoin de toi pour quelque chose !'\n Tuer 2 Slimes.", 5, "", 0, "Slime", 2));
-        quetes.add(new KillQuete("Chapitre 2 - Une recherche sans fin", "Tuer 2 Hiboux.", 5, "", 0, "Hibou", 2));
-        quetes.add(new TalkQuete("Chapitre 2 - Une recherche sans fin", "Rendre la quete au villageois au sud-ouest de la ville.", 50, "Miel", 3, "villageois2"));
+        quetes.add(new TalkQuete("Chapitre 2 - Une recherche finie", "Intérroger l'habitant au centre de la ville concernant le livre de Momoku.", 10, "", 0, "villageois4"));
+        quetes.add(new TalkQuete("Chapitre 2 - Une recherche finie", "Intérroger l'habitant au sud-ouest de la ville concernant le livre de Momoku", 10, "", 0, "villageois2"));
+        quetes.add(new KillQuete("Chapitre 2 - Une recherche finie", "'Je crois bien que je peux t'aider, mais avant j'ai besoin de toi pour quelque chose !'\n Tuer 2 Slimes.", 5, "", 0, "Slime", 2));
+        quetes.add(new KillQuete("Chapitre 2 - Une recherche finie", "Tuer 2 Hiboux.", 5, "", 0, "Hibou", 2));
+        quetes.add(new TalkQuete("Chapitre 2 - Une recherche finie", "Rendre la quete au villageois au sud-ouest de la ville.", 50, "Miel", 3, "villageois2"));
 
         quetes.add(new TalkQuete("Chapitre 3 - Injustice", "'Je t'ai bien eu héros, personne ne connaît ce livre laisse tomber !'\nAller parler au maitre du Dojo pour en savoir reellement plus sur le livre de Momoku.", 5, "Niveau", 1, "master"));
         quetes.add(new KillQuete("Chapitre 3 - Injustice", "'Je ne sais pas si tu es a la hauteur pour recevoir ce genre de conaissance, prouve moi ta force avant cela !'\nTuer 2 reptiles au nord.", 5, "", 0, "Reptile", 2));
@@ -36,29 +36,29 @@ public class QuestLine {
         quetes.add(new LootQuete("Chapitre 3 - Injustice", "'Donc vous n'etes pas un menteur, votre tenue semble abimee. Allez me chercher quelque chose pour que je la répare.'\nMiner 3 sources de minerai.", 10, "", 0, "SourceMinerai", 3));
         quetes.add(new TalkQuete("Chapitre 3 - Injustice", "Retourner voir le maitre du Dojo.", 200, "Niveau", 1, "master"));
 
-        quetes.add(new TalkQuete("Chapitre 4 - Le chemin d'un heros", "'Un vieil ami se bat à la frontiere sud pour repousser les assaillants, je pense que vous êtes prets a en savoir plus.'\nAller à la rencontre du moine au sud.", 5, "0", 0, "moine"));
-        quetes.add(new KillQuete("Chapitre 4 - Le chemin d'un heros", "'Vite heros, tuez les deux yeux à l'entrée de l'avant poste !!'\nTuer 2 yeux vivants.", 10, "", 0, "Oeil", 2));
-        quetes.add(new TalkQuete("Chapitre 4 - Le chemin d'un heros", "Retourner voir le moine.", 50, "Potion", 1, "moine"));
-        quetes.add(new LootQuete("Chapitre 4 - Le chemin d'un heros", "'C'est le maitre du Dojo qui vous envoie je suppose, vous savez vous battre ça se voit. Les defenses commencent à faiblir vous allez m'aider à reconstruir ces barricades. J'ai quelque chose pour vous si vous m'aidez.'\nCouper 4 buches de bois.", 15, "", 0, "SourceBois", 4));
-        quetes.add(new TalkQuete("Chapitre 4 - Le chemin d'un heros", "Retourner voir le moine.", 50, "Shuriken", 1, "moine"));
-        quetes.add(new KillQuete("Chapitre 4 - Le chemin d'un heros", "'Vous semblez honnête héros, je sens que vous êtes quelqu'un de confiance. Prenez ces shurikens, si c'est le livre que vous cherchez, il va falloir se battre.'\nTuer 3 betes.", 10, "", 0, "Bete", 3));
-        quetes.add(new KillQuete("Chapitre 4 - Le chemin d'un heros", "Tuer 3 yeux vivants.", 10, "", 0, "Oeil", 3));
-        quetes.add(new TalkQuete("Chapitre 4 - Le chemin d'un heros", "Retourner voir le moine.", 200, "Potion", 3, "moine"));
-        quetes.add(new TalkQuete("Chapitre 4 - Le chemin d'un heros", "'Vous les avez tués ? Parfait, j'ai reussi à renforcer les barricades. Continuez d'explorer le marais, vous trouverez surement quelque chose au sud !'\nExplorer le sud du marais et trouver des informations.", 10, "", 0, "goldninja"));
-        quetes.add(new TalkQuete("Chapitre 4 - Le chemin d'un heros", "'J'ai reussi, j'ai le livre de Momoku !! Je devrai rentrer, je ne me sens pas bien ici...'\nRetourner voir le moine.", 100, "Viande", 2, "moine"));
-        quetes.add(new TalkQuete("Chapitre 4 - Le chemin d'un heros", "'Je n'arrive pas à y croire ! Vous l'avez !! Vous avez le livre de Momoku je le sens ! Il faut prevenir le maitre du Dojo de suite !!!'\nRetourner voir le maitre du Dojo.", 30, "Niveau", 1, "master"));
+        quetes.add(new TalkQuete("Chapitre 4 - Le chemin d'un noob", "'Un vieil ami se bat à la frontiere sud pour repousser les assaillants, je pense que vous êtes prets a en savoir plus.'\nAller à la rencontre du moine au sud.", 5, "0", 0, "moine"));
+        quetes.add(new KillQuete("Chapitre 4 - Le chemin d'un noob", "'Vite sale noob, tuez les deux yeux à l'entrée de l'avant poste !!'\nTuer 2 yeux vivants.", 10, "", 0, "Oeil", 2));
+        quetes.add(new TalkQuete("Chapitre 4 - Le chemin d'un noob", "Retourner voir le moine.", 50, "Potion", 1, "moine"));
+        quetes.add(new LootQuete("Chapitre 4 - Le chemin d'un noob", "'C'est le maitre du Dojo qui vous envoie je suppose, vous savez vous battre ça se voit. Les defenses commencent à faiblir vous allez m'aider à reconstruir ces barricades. J'ai quelque chose pour vous si vous m'aidez.'\nCouper 4 buches de bois.", 15, "", 0, "SourceBois", 4));
+        quetes.add(new TalkQuete("Chapitre 4 - Le chemin d'un noob", "Retourner voir le moine.", 50, "Shuriken", 1, "moine"));
+        quetes.add(new KillQuete("Chapitre 4 - Le chemin d'un noob", "'Vous semblez honnête héros, je sens que vous êtes quelqu'un de confiance. Prenez ces shurikens, si c'est le livre que vous cherchez, il va falloir se battre.'\nTuer 3 betes.", 10, "", 0, "Bete", 3));
+        quetes.add(new KillQuete("Chapitre 4 - Le chemin d'un noob", "Tuer 3 yeux vivants.", 10, "", 0, "Oeil", 3));
+        quetes.add(new TalkQuete("Chapitre 4 - Le chemin d'un noob", "Retourner voir le moine.", 200, "Potion", 3, "moine"));
+        quetes.add(new TalkQuete("Chapitre 4 - Le chemin d'un noob", "'Vous les avez tués ? Parfait, j'ai reussi à renforcer les barricades. Continuez d'explorer le marais, vous trouverez surement quelque chose au sud !'\nExplorer le sud du marais et trouver des informations.", 10, "", 0, "goldninja"));
+        quetes.add(new TalkQuete("Chapitre 4 - Le chemin d'un noob", "'J'ai reussi, j'ai le livre de Momoku !! Je devrai rentrer, je ne me sens pas bien ici...'\nRetourner voir le moine.", 100, "Viande", 2, "moine"));
+        quetes.add(new TalkQuete("Chapitre 4 - Le chemin d'un noob", "'Je n'arrive pas à y croire ! Vous l'avez !! Vous avez le livre de Momoku je le sens ! Il faut prevenir le maitre du Dojo de suite !!!'\nRetourner voir le maitre du Dojo.", 30, "Niveau", 1, "master"));
 
-        quetes.add(new TalkQuete("Chapitre 5 - Hallucination collective", "'Vous l'avez... Vous l'avez obtenu heros, laissez moi le toucher.'\n*Le maitre passe son doigt sur le livre...*\n'La naissance du monde a été privé d'un sens primordial !? Comment est-ce possible !?'\nDiscuter avec le maitre.", 30, "", 0, "master"));
-        quetes.add(new TalkQuete("Chapitre 5 - Hallucination collective", "'J'ai toujours su que quelque chose n'allais pas, il nous manque quelque chose. Quelque chose de très important. Tout ca a surement un rapport avec les hallucinations à l'ouest vous devriez y jeter un coup d'oeil.'\nSe rendre a l'ouest et enquêter.", 30, "", 0, "cavegirl"));
-        quetes.add(new TalkQuete("Chapitre 5 - Hallucination collective", "Discuter avec la fille aux cheveux sales.", 30, "", 0, "cavegirl"));
-        quetes.add(new KillQuete("Chapitre 5 - Hallucination collective", "'J'aurai jamais cru demander de l'aide à quelqu'un de puant que vous, mais je n'ai pas le choix... Les bambous commencent a envahir mon espace vital !'\nTuer 2 bambous vivants.", 10, "", 0, "Bambou", 2));
-        quetes.add(new KillQuete("Chapitre 5 - Hallucination collective", "'Qu'est ce que c'est que ce monument ? Personne n'a remarque ca ? Je vais tenter de degager la zone et d'en parler à la fille.'\nTuer 2 reptiles au nord de la maison de la fille.", 10, "", 0, "Reptile", 2));
-        quetes.add(new TalkQuete("Chapitre 5 - Hallucination collective", "Retourner voir la fille aux cheveux sales.", 200, "Nouilles", 3, "cavegirl"));
-        quetes.add(new TalkQuete("Chapitre 5 - Hallucination collective", "'Un monument ? Quoi, au dessus ? Un pont ? Je me disais bien que vous aviez un problème vous, en tout cas merci de votre aide quand meme. Vous devriez peut etre vous faire soigner...'\nRetourner voir le maitre du dojo.", 30, "Niveau", 1, "master"));
-        quetes.add(new TalkQuete("Chapitre 5 - Hallucination collective", "'Un monument a l'ouest ? Mais oui biensur ! Seul le proprietaire du livre de Momoku ressent ce qu'autrui ignore! Vous êtes l'elu !!'\nDiscuter avec le maitre du dojo.", 30, "", 0, "master"));
-        quetes.add(new KillQuete("Chapitre 5 - Hallucination collective", "'Il est temps pour vous de sauver ce monde, entrez dans le monument ! Prenez le portail devant ce dernier a l'ouest. Bonne chance héros...'\nTuer l'esprit malveillant dans le cauchemar.", 10, "Niveau", 1, "EnnemiBoss", 1));
-        quetes.add(new TalkQuete("Chapitre 5 - Hallucination collective", "'Je devrai sortir de là au plus vite!'\nAller parler au spectre du cauchemar.", 30, "", 0, "spectre"));
-        quetes.add(new TalkQuete("Chapitre 5 - Hallucination collective", "'Heros, vous avez sauvé ce monde du cauchemar. L'humanite a retrouvé ce qu'on lui a volé. La vision. Vous avez redonné vie à ce monde. Merci.'\nRemercier le spectre.", 1000, "Niveau", 1, "spectre"));
+        quetes.add(new TalkQuete("Chapitre 5 - Hallucination solitaire", "'Vous l'avez... Vous l'avez obtenu sale noob, laissez moi le toucher.'\n*Le maitre passe son doigt sur le livre...*\n'La naissance du monde a été privé d'un sens primordial !? Comment est-ce possible !?'\nDiscuter avec le maitre.", 30, "", 0, "master"));
+        quetes.add(new TalkQuete("Chapitre 5 - Hallucination solitaire", "'J'ai toujours su que quelque chose n'allais pas, il nous manque quelque chose. Quelque chose de très important. Tout ca a surement un rapport avec les hallucinations à l'ouest vous devriez y jeter un coup d'oeil.'\nSe rendre a l'ouest et enquêter.", 30, "", 0, "cavegirl"));
+        quetes.add(new TalkQuete("Chapitre 5 - Hallucination solitaire", "Discuter avec la fille aux cheveux sales.", 30, "", 0, "cavegirl"));
+        quetes.add(new KillQuete("Chapitre 5 - Hallucination solitaire", "'J'aurai jamais cru demander de l'aide à quelqu'un de puant que vous, mais je n'ai pas le choix... Les bambous commencent a envahir mon espace vital !'\nTuer 2 bambous vivants.", 10, "", 0, "Bambou", 2));
+        quetes.add(new KillQuete("Chapitre 5 - Hallucination solitaire", "'Qu'est ce que c'est que ce monument ? Personne n'a remarque ca ? Je vais tenter de degager la zone et d'en parler à la fille.'\nTuer 2 reptiles au nord de la maison de la fille.", 10, "", 0, "Reptile", 2));
+        quetes.add(new TalkQuete("Chapitre 5 - Hallucination solitaire", "Retourner voir la fille aux cheveux sales.", 200, "Nouilles", 3, "cavegirl"));
+        quetes.add(new TalkQuete("Chapitre 5 - Hallucination solitaire", "'Un monument ? Quoi, au dessus ? Un pont ? Je me disais bien que vous aviez un problème vous, en tout cas merci de votre aide quand meme. Vous devriez peut etre vous faire soigner...'\nRetourner voir le maitre du dojo.", 30, "Niveau", 1, "master"));
+        quetes.add(new TalkQuete("Chapitre 5 - Hallucination solitaire", "'Un monument a l'ouest ? Mais oui biensur ! Seul le proprietaire du livre de Momoku ressent ce qu'autrui ignore! Vous êtes l'elu !!'\nDiscuter avec le maitre du dojo.", 30, "", 0, "master"));
+        quetes.add(new KillQuete("Chapitre 5 - Hallucination solitaire", "'Il est temps pour vous de sauver ce monde, entrez dans le monument ! Prenez le portail devant ce dernier a l'ouest. Bonne chance héros...'\nTuer l'esprit malveillant dans le cauchemar.", 10, "Niveau", 1, "EnnemiBoss", 1));
+        quetes.add(new TalkQuete("Chapitre 5 - Hallucination solitaire", "'Je devrai sortir de là au plus vite!'\nAller parler au spectre du cauchemar.", 30, "", 0, "spectre"));
+        quetes.add(new TalkQuete("Chapitre 5 - Hallucination solitaire", "'sale noob, vous avez sauvé ce monde du cauchemar. L'humanite a retrouvé ce qu'on lui a volé. La vision. Vous avez redonné vie à ce monde. Merci.'\nRemercier le spectre.", 1000, "Niveau", 1, "spectre"));
     }
 
     public ObservableList<Quete> getQuetes() {
