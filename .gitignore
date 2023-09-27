@@ -135,6 +135,10 @@ buildNumber.properties
 .classpath
 
 .metadata/
+<<<<<<< HEAD
 
 # End of https://www.toptal.com/developers/gitignore/api/java,intellij+all,maven
+=======
+>>>>>>> feature/update_histoire
 
+# End of https://www.toptal.com/developers/gitignore/api/java,intellij+all,maven
