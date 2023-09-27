@@ -114,9 +114,9 @@ public class TerrainVue {
             SoundPlayer.playMapMusic(numero);
             zoneActuelle.setMapObstacles(mapLoader.LoadTileMap("map"+numero+"/Map"+numero+"Obstacles"));
             zoneActuelle.setMapSpawn(mapLoader.LoadTileMap("map"+numero+"/Map"+numero+"Spawn"));
-            //zoneActuelle.getListeActeurs().addListener(new ObsListActeurs(gamePane, joueur));
-            //zoneActuelle.getProjectiles().addListener(new ObsListProjectiles(gamePane));
-            //zoneActuelle.getListeRessource().addListener(new ObsListRessources(gamePane, joueur));
+            zoneActuelle.getListeActeurs().addListener(new ObsListActeurs(gamePane, joueur));
+            zoneActuelle.getProjectiles().addListener(new ObsListProjectiles(gamePane));
+            zoneActuelle.getListeRessource().addListener(new ObsListRessources(gamePane, joueur));
             updateActeurs();
             updateRessources();
             zoneActuelle.loadPnjHitboxes();
